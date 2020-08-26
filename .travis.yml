@@ -4,6 +4,8 @@ rvm:
   - 2.7
   - 2.6
   - 2.5
+  - 2.4
+  - 2.3
   - jruby-9.2.11.1
 gemfile:
   - gemfiles/ar50.gemfile
@@ -13,14 +15,12 @@ gemfile:
   - gemfiles/ar61.gemfile
   - gemfiles/rgeo1.gemfile
 matrix:
-  include:
+  exclude:
     - rvm: 2.4
-      gemfile:
-        - gemfiles/ar50.gemfile
-        - gemfiles/ar51.gemfile
-        - gemfiles/ar52.gemfile
+      gemfile: gemfiles/ar60.gemfile
+    - rvm: 2.4
+      gemfile: gemfiles/ar61.gemfile
     - rvm: 2.3
-      gemfile:
-        - gemfiles/ar50.gemfile
-        - gemfiles/ar51.gemfile
-        - gemfiles/ar52.gemfile
+      gemfile: gemfiles/ar60.gemfile
+    - rvm: 2.3
+      gemfile: gemfiles/ar61.gemfile
