@@ -17,10 +17,11 @@ jobs:
     steps:
       - name: Set Up Deps
         run: sudo apt-get install libgeos
-      - name: Test
+      - name: Set Up Gems
         uses: actions/checkout@v2
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
+      - name: Test
         run: bundle exec rake
