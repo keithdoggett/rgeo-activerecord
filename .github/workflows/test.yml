@@ -16,7 +16,7 @@ jobs:
           - gemfiles/rgeo1.gemfile
     steps:
       - name: Set Up Deps
-        - run: sudo apt-get install libgeos
+        run: sudo apt-get install libgeos
       - name: Test
         - uses: actions/checkout@v2
         - uses: ruby/setup-ruby@v1
