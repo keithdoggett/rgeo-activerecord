@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: [2.7.x, 2.6.x, 2.5.x, jruby]
+        ruby: [2.7, 2.6, 2.5, jruby]
         BUNDLE_GEMFILE:
           - gemfiles/ar50.gemfile
           - gemfiles/ar51.gemfile
