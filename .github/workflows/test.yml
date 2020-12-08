@@ -1,5 +1,9 @@
 name: Test
+<<<<<<< HEAD
 on: [push, pull_request]
+=======
+on: [push, pull]
+>>>>>>> 76bf98095f12de2b592e46f3ded3a2383cb1e884
 
 jobs:
   test:
